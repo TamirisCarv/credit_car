@@ -13,6 +13,10 @@ document.getElementById("nome").addEventListener("keyup", function (event) {
         .value.toUpperCase();
 });
 
+IMask(document.querySelector("#validade"), {
+    mask: "00/00",
+  });
+
 document.getElementById("validade").addEventListener("keyup", function (event) {
     document.getElementById("exibirvalidade").innerHTML = document.querySelector("#validade")
         .value.toUpperCase();
@@ -27,3 +31,8 @@ document.getElementById("codigo").addEventListener("keyup", function (event) {
         exibircodigo.innerHTML = exibircodigo.innerHTML.replace("*", codigo.charAt(0));
     }
 });
+
+
+
+  
+
