@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conexão estabelecida</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body">
+      <div class="content">
+        <h2> Cartão cadastrado! Pode comprar! 🥳</h2>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        background-color: rgb(255, 0, 153);
+      }
+
+      .body {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient(
+            at 89% 94%,
+            hsl(327, 100%, 50%) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 60% 0%,
+            hsl(133, 100%, 50%) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 6% 96%,
+            hsl(133, 100%, 50%) 0px,
+            transparent 50%
+          );
+      }
+
+      .content {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto, "Sans-serif";
+        color: white;
+        font-size: 2.5rem;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </body>
+</html>

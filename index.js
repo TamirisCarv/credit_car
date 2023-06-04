@@ -61,7 +61,7 @@ document.getElementById("codigo").addEventListener("keyup", function (event) {
 
     let asteriscoIndex = exibircodigo.innerHTML.indexOf("*");
     if (asteriscoIndex !== -1) {
-        exibircodigo.innerHTML = exibircodigo.innerHTML.replace("*", codigo.charAt(0));
+        exibircodigo.innerHTML = exibircodigo.innerHTML.replace("*", codigo.charAt(codigo.length - 1))
     }
 });
 
@@ -78,6 +78,23 @@ document.getElementById("cpf").addEventListener("keyup", function (event) {
         exibircpf.innerHTML = exibircpf.innerHTML.replace("*", cpf.charAt(cpf.length - 1));
     }
 });
+
+document.getElementById("codigo").addEventListener("focus", function (event) {
+    document.getElementById("credit-card").classList.add("card-flipped");
+});
+
+document.getElementById("codigo").addEventListener("blur", function (event) {
+    document.getElementById("credit-card").classList.remove("card-flipped");
+});
+
+document.getElementById("cpf").addEventListener("focus", function (event) {
+    document.getElementById("credit-card").classList.add("cpf-flipped");
+});
+
+document.getElementById("cpf").addEventListener("blur", function (event) {
+    document.getElementById("credit-card").classList.remove("cpf-flipped");
+});
+
 
 
 

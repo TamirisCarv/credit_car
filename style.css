@@ -55,11 +55,18 @@
   
     color: #f3f4f6;
   }
+
+ .card-cpf-input:focus{
+  border: 0.15rem solid #00ff37;
+  outline: 0.15rem solid #1aff00;
+ }
   
   input:focus {
     border: 0.15rem solid #ff007f;
     outline: 0.15rem solid #ff007f;
   }
+
+ 
   
   .divisao{
     display: flex;
@@ -70,38 +77,51 @@
   }
 
   #credit-card {
-   
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+
+  }
+  #front{
     color: #f3f4f6;
-    padding: 6rem 8rem;
+    padding: 7rem 12rem;
     position: fixed;
     top: 30%;
     right: 10rem; 
     transform: translate(0, -50%); 
-    background-color: #ff007f;
+    background:linear-gradient(to right, #ff007f, #be074d); 
     border-radius: 1rem;
  
- 
-
   }
-  #front{
-    display: flex;
-  flex-direction: column;
-  
+  #back{
+    color: #f3f4f6;
+    padding: 7rem 12rem;
+    position: fixed;
+    top: 30%;
+    right: 10rem; 
+    transform: translate(0, -50%); 
+    background:linear-gradient(to right, #ff007f, #be074d); 
+    border-radius: 1rem;
+ 
+    
   }
 
   #exibirnumero{
     position: absolute;
   top: 60%;
-  left: 30%;
+  left: 9rem;
   transform: translate(-50%, -50%);
+ 
   }
 
   #exibirnome{
-    position: absolute;
+    position: fixed;
   top: 80%;
-  left: 25%;
+  left: 7.6rem;
   transform: translate(-50%, -50%);
   font-size: 1rem;
+  max-width: 160px;
 
   }
 
@@ -115,27 +135,105 @@
 
   }
 
-  #back{
-    display: flex;
-    flex-direction: column;
-    color: #f3f4f6;
-    padding: 6rem 11rem;
-    position: fixed;
-    top: 25rem;
-    right: 0.3rem; 
-    transform: translate(0, -50%); 
-    background-color: #ff007f;
-    border-radius: 1rem;
- 
- 
-  }
+  
   #exibiroperadora img{
     width: 80px;
     position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    filter: brightness(100);
   }
 
+  #exibircodigo{
+   
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+    border: 2px solid #f3f4f6;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 1rem;
+   
+    transform: translate(-50%, -50%);
+  }
+
+  #documento{
+    color: #f3f4f6;
+    padding: 3rem 2.3rem;
+    position: fixed;
+    top: 30%;
+    right: 10rem; 
+    transform: translate(0, -50%); 
+    background:linear-gradient(to right, #00ff37, #07be50); 
+    border-radius: 1rem;
+  
+   
+ 
+  }
+  #exibircpf{
+   
+    position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+ 
+  
+  }
+  
+  #imagemperfil{
+    width: 100px;
+  }
+ 
+  .card-front {
+    display: block;
+}
+
+.card-back {
+    display: none;
+}
+
+.card-flipped .card-front {
+    display: none;
+}
+
+.card-flipped .card-back {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+.cpf-flipped .hidden {
+    display: block;
+}
+
+button {
+  margin-top: 1rem;
+  margin-left: 7rem;
+
+  border: 0;
+  padding: 1.6rem;
+  width: 60%;
+  background: #ff007f;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #f9fafb;
+
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #00ff37;
+}
+
+ 
+  
+ 
   
  

@@ -17,21 +17,29 @@
 
 <body>
     <div id="credit-card">
-        <div id="front">
+       
+        <div id="front" class="card-front">
             <div id="exibirnumero">**** **** **** ****</div>
             <div id="exibirnome">NOME E SOBRENOME </div>
             <div id="exibirvalidade"> MM/AA </div>
             <div id="exibiroperadora"></div>
         </div>
-        <div id="back">
+
+   
+      
+        <div id="back" class="card-back">
+           
             <div id="exibircodigo">***</div>
+           
         </div>
-        <div class="documento">
+        <div id="documento" class="hidden">
+            <img id="imagemperfil" src="./imagens/perfil.png" alt="">
+            <p>CPF DO TITULAR DESTE CARTÃO</p>
             <div id="exibircpf">*** *** *** **</div>
         </div>
         </div>
    
-    <form action="">
+    <form action="compra.html">
     
    
         <section class="inputs flex">
@@ -65,15 +73,19 @@
         </div>
 
           
-            <div class="inputBox">
+            <div class="inputCpf">
                 <span> CPF  </span>
                 <input type="text"  class="card-cpf-input" id="cpf">
 
             </div>
           
+           
+            <button type="submit" class="submit-button">Cadastrar Cartão</button>
+        
         </form>
  
 </section>
+
     
     <script src="https://unpkg.com/imask"></script>
 
