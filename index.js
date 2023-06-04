@@ -7,8 +7,37 @@ document.getElementById("numero").addEventListener("input", function (event) {
   
     let asteriscoIndex = exibirnumero.innerHTML.indexOf("*");
     if (asteriscoIndex !== -1) {
+        let primeiroDigito = numero.charAt(0);
         exibirnumero.innerHTML = exibirnumero.innerHTML.replace("*", numero.charAt(numero.length - 1));
-     
+   
+       let imagem;
+       switch(primeiroDigito){
+        case '4':  imagem = document.querySelector("#exibiroperadora img");
+        if (!imagem) {
+          imagem = document.createElement("img");
+          imagem.src = "./imagens/visa.png"; 
+          document.querySelector("#exibiroperadora").appendChild(imagem); 
+        }
+        break;
+
+        case '5':  imagem = document.querySelector("#exibiroperadora img");
+        if (!imagem) {
+          imagem = document.createElement("img");
+          imagem.src = "./imagens/mastercard.png"; 
+          document.querySelector("#exibiroperadora").appendChild(imagem); 
+        }
+        break;
+
+        case '6':  imagem = document.querySelector("#exibiroperadora img");
+        if (!imagem) {
+          imagem = document.createElement("img");
+          imagem.src = "./imagens/hipercard.png"; 
+          document.querySelector("#exibiroperadora").appendChild(imagem); 
+        }
+        break;
+
+       
+        }
     }
   });
   
