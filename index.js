@@ -1,4 +1,4 @@
-document.addEventListener("keyup", function(event) {
+document.getElementById("numero").addEventListener("keyup", function(event) {
     let numero = document.getElementById("numero").value;
     let exibirnumero = document.getElementById("exibirnumero");
 
@@ -6,4 +6,9 @@ document.addEventListener("keyup", function(event) {
     if (asteriscoIndex !== -1) {
         exibirnumero.innerHTML = exibirnumero.innerHTML.replace("*", numero.charAt(0));
     }
+});
+
+document.getElementById("nome").addEventListener("keyup", function(event) {
+    let nome = document.getElementById("nome").value;
+    document.getElementById("exibirnome").innerHTML = nome;
 });
