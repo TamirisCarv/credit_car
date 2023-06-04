@@ -9,6 +9,12 @@ document.getElementById("numero").addEventListener("keyup", function(event) {
 });
 
 document.getElementById("nome").addEventListener("keyup", function(event) {
-    let nome = document.getElementById("nome").value;
-    document.getElementById("exibirnome").innerHTML = nome;
+  document.getElementById("exibirnome").innerHTML = document.querySelector("#nome")
+    .value.toUpperCase();
+});
+
+document.getElementById("validade").addEventListener("keyup", function(event) {
+   
+    document.getElementById("exibirvalidade").innerHTML = document.querySelector("#validade")
+    .value.toUpperCase();
 });
