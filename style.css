@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: #1f2937;
+  }
+  body,
+  input,
+  button {
+    font-size: 1.6rem;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  form {
+    padding: 2.4rem;
+    max-width: 40rem;
+    margin: auto;
+    
+  }
+
+  .inputs {
+    margin-top: 1rem;
+    margin-left: -20rem;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 40rem;
+  
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #e5e7eb;
+  
+    gap: 0.4rem;
+    align-items: center;
+  }
+  
+  input {
+    margin-top: 0.4rem;
+  
+    width: 100%;
+    font-family: "Source Sans Pro";
+  
+    padding: 1.2rem;
+    border: 0.1rem solid #374151;
+  
+    background: #111827;
+    border-radius: 0.4rem;
+  
+    color: #f3f4f6;
+  }
+  
+  input:focus {
+    border: 0.15rem solid #ff007f;
+    outline: 0.15rem solid #ff007f;
+  }
+  
+  .divisao{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+   
+  }
+
+  #credit-card {
+   
+    color: #f3f4f6;
+    padding: 6rem 8rem;
+    position: fixed;
+    top: 30%;
+    right: 10rem; 
+    transform: translate(0, -50%); 
+    background-color: #ff007f;
+    border-radius: 1rem;
+ 
+ 
+
+  }
+  #front{
+    display: flex;
+  flex-direction: column;
+  
+  }
+
+  #exibirnumero{
+    position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  }
+
+  #exibirnome{
+    position: absolute;
+  top: 80%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+
+  }
+
+  #exibirvalidade{
+    position: absolute;
+  top: 80%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+
+
+  }
+
+  #back{
+    display: flex;
+    flex-direction: column;
+    color: #f3f4f6;
+    padding: 6rem 11rem;
+    position: fixed;
+    top: 25rem;
+    right: 0.3rem; 
+    transform: translate(0, -50%); 
+    background-color: #ff007f;
+    border-radius: 1rem;
+ 
+ 
+  }
+  #exibiroperadora img{
+    width: 80px;
+    position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  }
+
+  
+ 
