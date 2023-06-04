@@ -2,12 +2,9 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +14,7 @@
 
 <body>
     <div id="credit-card">
-       
+
         <div id="front" class="card-front">
             <div id="exibirnumero">**** **** **** ****</div>
             <div id="exibirnome">NOME E SOBRENOME </div>
@@ -25,72 +22,72 @@
             <div id="exibiroperadora"></div>
         </div>
 
-   
-      
+
+
         <div id="back" class="card-back">
-           
+
             <div id="exibircodigo">***</div>
-           
+
         </div>
         <div id="documento" class="hidden">
             <img id="imagemperfil" src="./imagens/perfil.png" alt="">
             <p>CPF DO TITULAR DESTE CARTÃO</p>
             <div id="exibircpf">*** *** *** **</div>
         </div>
-        </div>
-   
+    </div>
+
     <form action="compra.html">
-    
-   
+
+
         <section class="inputs flex">
-       
+
             <div class="inputBox">
                 <span> Número do Cartão</span>
                 <input type="text" class="card-number-input" id="numero">
 
             </div>
 
-           
+
             <div class="inputBox">
                 <span> Nome Completo</span>
                 <input type="text" class="card-name-input" id="nome">
 
             </div>
-           
+
             <div class="divisao">
-            
-            <div class="inputBox">
-                <span> Validade </span>
-                <input type="text" class="card-validade-input" id="validade">
 
+                <div class="inputBox">
+                    <span> Validade </span>
+                    <input type="text" class="card-validade-input" id="validade">
+
+                </div>
+
+                <div class="inputBox">
+                    <span> Código de Segurança </span>
+                    <input type="text" maxlength="3" class="card-cod-input" id="codigo">
+
+                </div>
             </div>
-            
-            <div class="inputBox">
-                <span> Código de Segurança </span>
-                <input type="text" maxlength="3" class="card-cod-input" id="codigo">
 
-            </div>
-        </div>
 
-          
             <div class="inputCpf">
-                <span> CPF  </span>
-                <input type="text"  class="card-cpf-input" id="cpf">
+                <span> CPF </span>
+                <input type="text" class="card-cpf-input" id="cpf">
 
             </div>
-          
-           
-            <button type="submit" class="submit-button">Cadastrar Cartão</button>
-        
-        </form>
- 
-</section>
 
-    
+
+            <button type="submit" class="submit-button">Cadastrar Cartão</button>
+
+    </form>
+
+    </section>
+
+
     <script src="https://unpkg.com/imask"></script>
 
     <script src="index.js"></script>
-   
+
 
 </body>
 
